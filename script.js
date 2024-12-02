@@ -5,7 +5,7 @@ const database = {
       "nom": "Nour",
       "mot_de_passe": "1",
       "image": "img/OIQ.webp",
-      "contacts": [2,3,5],
+      "contacts": [2,3,5,10],
       "groupes": [1]
     },
     {
