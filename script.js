@@ -5,7 +5,7 @@ const database = {
       "nom": "Nour",
       "mot_de_passe": "1",
       "image": "img/OIQ.webp",
-      "contacts": [2,3,5,10],
+      "contacts": [2,3,5,6],
       "groupes": [1]
     },
     {
@@ -26,7 +26,7 @@ const database = {
     },
 
     {
-      "id": 10,
+      "id": 6,
       "nom": "Edem",
       "mot_de_passe": "1",
       "image": "img/OIQ.webp",
@@ -132,6 +132,14 @@ const database = {
       "id": 1,
       "expediteur": 1,
       "destinataire": [2],
+      "text": "Salut, comment vas-tu ?",
+      "date": "2024-02-16T12:00:00",
+      "lu": false  
+    },
+    {
+      "id": 9,
+      "expediteur": 6,
+      "destinataire": [1],
       "text": "Salut, comment vas-tu ?",
       "date": "2024-02-16T12:00:00",
       "lu": false  
