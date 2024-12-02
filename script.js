@@ -73,7 +73,7 @@ const database = {
     {
       "id": 6,
       "nom": "Edem",
-      "image": "img/elvira.png",
+      "image": "img/OIQ.png",
       "archive": false ,
       "bloque": false,
     },
