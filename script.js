@@ -5,16 +5,8 @@ const database = {
       "nom": "Nour",
       "mot_de_passe": "1",
       "image": "img/OIQ.webp",
-      "contacts": [2,3,5,10],
+      "contacts": [2,3,5],
       "groupes": [1]
-    },
-    {
-      "id": 10,
-      "nom": "Edem",
-      "mot_de_passe": "1",
-      "image": "img/OIQ.webp",
-      "contacts": [1,2,3,5],
-      "groupes": [1,2]
     },
     {
       "id": 2,
@@ -29,8 +21,17 @@ const database = {
       "nom": "Elvira",
       "mot_de_passe": "3",
       "image": "img/elvira.png",
-      "contacts": [1,2,10],
+      "contacts": [1,2],
       "groupes": [1,2]
+    },
+
+    {
+      "id": 10,
+      "nom": "Edem",
+      "mot_de_passe": "1",
+      "image": "img/OIQ.webp",
+      "contacts": [1,2,3],
+      "groupes": [1]
     },
     
   ],
@@ -38,6 +39,13 @@ const database = {
     {
       "id": 4,
       "nom": "Toto",
+      "image": "img/OIQ.webp",
+      "archive": false ,
+      "bloque": false,
+    },
+    {
+      "id": 10,
+      "nom": "Edem",
       "image": "img/OIQ.webp",
       "archive": false ,
       "bloque": false,
@@ -69,14 +77,7 @@ const database = {
       "image": "img/OIQ.webp",
       "archive": false ,
       "bloque": false,
-    },
-    {
-      "id": 10,
-      "nom": "Edem",
-      "image": "img/OIQ.webp",
-      "archive": false ,
-      "bloque": false,
-    },
+    }
   ],
   "groupes": [
     {
