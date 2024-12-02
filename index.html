@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breukh-chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<HASH>" crossorigin="anonymous" />
+</head>
+<body>
+      
+    <div class="login-form hidden">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Nom d'utilisateur" id="username">
+            <input type="password" placeholder="Mot de passe" id="password">
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+    <div class="container hidden">
+        <div class="left ">
+            <div class="sidebar">
+                <ul>
+                    <li><i class="fas fa-envelope" style="color: blue;"></i> <br>Message</li>
+                    <li><i class="fas fa-comments" style="color: green;"></i> <br> Discussion</li>
+                    <li><i class="fas fa-archive" style="color: orange;"></i> <br>Archives</li>
+                    <li><i class="fas fa-users" style="color: red;"></i> <br>Groupes</li>
+                    <li><i class="fas fa-user-plus" style="color: purple;"></i><br> contact</li>
+                    <li><i class="fas fa-sign-out-alt" style="color: rgb(245, 245, 20);"></i><br> deconexion</li>
+                </ul>
+                
+            </div>
+            <div class="cnt ">
+                <div class="active-menu">
+                    <h2>Menu actif</h2>
+                    <button class="add-button hidden">Ajouter</button>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un contact">
+                </div>
+                <div class="contacts groups">
+                    <ul style="gap: 10px;">
+                        <li class="data-contact-id data-group-id">
+    
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactslist hidden">
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                            <span class="contact-name"></span>
+                            <input type="checkbox" class="contact-checkbox" data-contact-id="1">
+                        </li> 
+                    </ul>
+                </div>
+                
+                
+                
+               
+                
+                
+                <div class="add-contact-form hidden">
+                    <h2></h2>
+                    <form id="addContactForm">
+                        <input type="text" placeholder="Nom du contact" id="contactName">
+                        <button type="submit">Ajouter</button>
+                    </form>
+                </div>
+                <div class="add-group-form hidden">
+                    <h2></h2>
+                    <form id="addGroupForm">
+                      <div class="form-group">
+                        <label for="groupName">Nom du groupe :</label>
+                        <input type="text" id="groupName" name="groupName" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="groupMembers">Membres :</label>
+                        <select id="groupMembers" name="groupMembers[]" multiple required>
+                          <!-- Options pour les membres du groupe seront ajoutées dynamiquement ici -->
+                        </select>
+                      </div>
+                      <button type="submit">Créer le groupe</button>
+                    </form>
+                  </div>
+                  
+                
+
+            </div>
+         
+            
+        </div>
+    <div class="right ">
+        <div class="contact-header  hidden">
+           <div class="contact-info ">
+             <img src="img/OIQ.webp" alt="">
+             <h2>Nom du contact</h2>
+           </div>
+                <ul class="contact-options ">
+                    <li><i style="color: rgb(255, 115, 0);cursor: pointer;"  class="fas fa-user-times"></i> </li>
+                    <li><i style="color: red;cursor: pointer;" class="fas fa-trash"></i> </li>
+                    <li><i style="color: rgb(160, 152, 152);cursor: pointer;" class="fas fa-archive"></i> </li>
+                    <li><i style="color: red;cursor: pointer;" class="fas fa-ban"></i> </li>
+                </ul>
+        </div>
+        <div class="group-header hidden">
+            <div class="contact-info ">
+              <img src="img/OIQ.webp" alt="">
+              <h2>Nom du groupe</h2>
+            </div>
+                 <ul class="contact-options ">
+                     <li><i style="color: red;cursor: pointer;" class="fas fa-trash"></i> </li>
+                     <li><i style="color: rgb(160, 152, 152);cursor: pointer;" class="fas fa-archive"></i> </li>
+                     <li><i style="color: red;cursor: pointer;" class="fas fa-ban"></i> </li>
+                 </ul>
+         </div>
+            <div class="messages  hidden ">
+                <div class="message sent">
+                    <p>Message envoyé</p>
+                    <span class="message-time">11 février 2024, 15:30</span>
+                </div>
+                <div class="message received">
+                    <p>Réponse reçue</p>
+                    <span class="message-time">11 février 2024, 15:35</span>
+                </div>
+               
+            </div>
+
+            <div class="discussion-input hidden">
+               
+                <input type="text" id="discussionInput" placeholder="Votre message">
+                <button title="cliquer ici pour envoyer le message au contact selectionner" type="submit"><i class="fas fa-paper-plane"></i></button>
+            
+        </div>
+
+            <div class="message-input hidden">
+                <!-- <form id="messageForm"> -->
+                    <input type="text" id="messageInput" placeholder="Votre message">
+                    <button type="submit" title="cliquer ici pour envoyer le message"><i class="fas fa-paper-plane"></i></button>
+                <!-- </form> -->
+            </div>
+
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

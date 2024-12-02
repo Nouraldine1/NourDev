@@ -1,0 +1,516 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: initial;
+    padding: 0
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    background-color: #000;
+    width: 100%;
+}
+
+.left {
+    width: 45%;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+}
+
+.active-menu {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cnt{
+    padding: 20px;
+    width: 100%;
+}
+
+/* .contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts ul li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    width: 90%;
+    background-color:rgb(147, 214, 237);
+    margin-top: 10px;
+    border-radius: 6px;
+    border: #0056b3 1px solid;
+}
+
+.contacts ul li:hover {
+    background-color: #eee;
+}
+
+.contacts ul li i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contacts ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contacts ul li span {
+    font-weight: bold;
+} */
+
+.right {
+    width: 55%;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 15%; 
+    min-width: 100px; 
+    background-color: lightblue;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.sidebar ul li {
+    padding: 5px;
+    cursor: pointer;
+    border: #007bff 1px solid;
+    border-radius: 6px;
+    margin-top: 4px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.sidebar ul li:hover {
+    background-color: #e1e0e0;
+}
+
+.sidebar ul li i {
+    margin-right: 5px;
+}
+
+
+.contact-header ,
+.group-header{
+    margin-bottom: 20px;
+    background-color: rgb(147, 214, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: #0056b3 1px solid;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.contact-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.contact-options li:hover {
+    background-color: #ba0101;
+}
+
+.contact-options li {
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.contact-options li:last-child {
+    margin-right: 0;
+}
+
+.contact-options li i {
+    margin-right: 5px;
+}
+
+.messages {
+    max-height: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    clear: both;
+}
+
+.sent {
+    background-color: #007bff;
+    color: #fff;
+    float: right;
+}
+
+.received {
+    background-color: #f0f0f0;
+    color: #000;
+    float: left;
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.message-input  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #0056b3;
+}
+
+/* .contacts li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} */
+.discussion-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.discussion-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.discussion-input button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.discussion-input button:hover {
+    background-color: #0056b3;
+}
+
+.unread-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.last-message-time {
+    margin-left: auto;
+    font-size: 10px;
+    color: #0056b3;
+}
+
+.login-form {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+.hidden{
+    display: none;
+}
+.data-contact-id{
+    cursor: pointer;
+
+}
+.add-contact-form {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.add-contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.add-contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.add-contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.add-button {
+    background-color: #0056b3; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur au survol */
+    margin-right: 10px; /* Marge à droite */
+    align-self: flex-end;
+}
+
+.add-button:hover {
+    background-color: #9cccf5; /* Couleur de fond au survol */
+}
+
+
+
+.add-group-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .add-group-form h2 {
+    margin-top: 0;
+  }
+  
+  .add-group-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-group-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-group-form input[type="text"],
+  .add-group-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .add-group-form button {
+    background-color: #4585a0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .add-group-form button:hover {
+    background-color: #bedae7;
+  }
+  
+ 
+  .container.hide-children > * {
+    display: none;
+  }
+
+
+.contactslist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactslist ul li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Pour aligner les éléments sur tout l'espace disponible */
+    align-items: center; /* Pour aligner les éléments verticalement */
+    background-color: rgb(147, 214, 237);
+    margin-top: 10px;
+    border-radius: 6px;
+    border: #0056b3 1px solid;
+}
+
+.contactslist ul li input {
+    margin-left: auto; /* Pour pousser la case à cocher vers la droite */
+}
+
+.contactslist ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contactslist ul li span {
+    font-weight: bold;
+}
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts ul li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: rgb(147, 214, 237);
+    margin-top: 10px;
+    border-radius: 6px;
+    border: #0056b3 1px solid;
+    transition: background-color 0.3s; /* Animation de transition pour le survol */
+}
+
+.contacts ul li:hover {
+    background-color: #eee;
+}
+
+.contacts ul li i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.contacts ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contacts ul li span {
+    font-weight: bold;
+}
+
+.contacts li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contacts ul li .contact-info {
+    margin-left: auto; /* Pour pousser les informations du contact vers la droite */
+}
+
+

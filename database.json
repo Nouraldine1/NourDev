@@ -1,0 +1,142 @@
+ {
+  "users": [
+    {
+      "id": 1,
+      "nom": "Aly",
+      "mot_de_passe": "1",
+      "image": "OIP.jpg",
+      "contacts": [2,3,5],
+      "groupes": [1]
+    },
+    {
+      "id": 2,
+      "nom": "Bob",
+      "mot_de_passe": "2",
+      "image": "OIP.jpg",
+      "contacts": [1,4],
+      "groupes": [1]
+    }
+  ],
+  "contacts": [
+    {
+      "id": 4,
+      "nom": "Toto",
+      "image": "OIP.jpg",
+      "archive": false 
+    },
+    {
+      "id": 5,
+      "nom": "Elvira❤️🔐",
+      "image": "img/elvira.png",
+      "archive": false 
+    },
+    {
+      "id": 3,
+      "nom": "Titi💪🏿",
+      "image": "OIP.jpg",
+      "archive": true 
+    },
+    {
+      "id": 1,
+      "nom": "Aly😎👍🏾",
+      "image": "OIP.jpg",
+      "archive": false 
+    },
+    {
+      "id": 2,
+      "nom": "Bob",
+      "image": "OIP.jpg",
+      "archive": false 
+    }
+  ],
+  "groupes": [
+    {
+      "id": 1,
+      "nom": "Groupe1",
+      "membres": [1, 2],
+      "discussions": [
+        {
+          "id": 1,
+          "expediteur": 1,
+          "text": "Bonjour à tous !",
+          "date": "2024-02-16T12:00:00",
+          "lu": true  
+        },
+        {
+          "id": 2,
+          "expediteur": 2,
+          "text": "Bonjour !",
+          "date": "2024-02-16T12:05:00",
+          "lu": false  
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "expediteur": 1,
+      "destinataire": [2],
+      "text": "Salut, comment vas-tu ?",
+      "date": "2024-02-16T12:00:00",
+      "lu": false  
+    },
+    {
+      "id": 2,
+      "expediteur": 2,
+      "destinataire": [1],
+      "text": "Bonjour ! Je vais bien, merci.",
+      "date": "2024-02-16T12:05:00",
+      "lu": true  
+    },
+    
+    {
+      "id": 3,
+      "expediteur": 1,
+      "destinataire": [3],
+      "text": "Salut Titi !",
+      "date": "2024-02-16T12:10:00",
+      "lu": false  
+    },
+    {
+      "id": 4,
+      "expediteur": 3,
+      "destinataire": [1],
+      "text": "Salut aly !",
+      "date": "2024-02-16T12:15:00",
+      "lu": true  
+    },
+    {
+      "id": 5,
+      "expediteur": 1,
+      "destinataire": [5],
+      "text": "Salut Elvira !",
+      "date": "2024-02-16T12:20:00",
+      "lu": false  
+    },
+    {
+      "id": 6,
+      "expediteur": 5,
+      "destinataire": [1],
+      "text": "Salut Aly cmnt vas-tu !",
+      "date": "2024-02-16T12:25:00",
+      "lu": false  
+    },
+    {
+      "id": 7,
+      "expediteur": 2,
+      "destinataire": [4],
+      "text": "Salut Aly !",
+      "date": "2024-02-16T12:30:00",
+      "lu": false  
+    },
+    {
+      "id": 8,
+      "expediteur": 4,
+      "destinataire": [2],
+      "text": "Salut Bob !",
+      "date": "2024-02-16T12:35:00",
+      "lu": false  
+    }
+  ]
+}

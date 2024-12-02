@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breukh-chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<HASH>" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="sidebar">
+                <ul>
+                    <li><i class="fas fa-envelope" style="color: blue;"></i> <br>Message</li>
+                    <li><i class="fas fa-comments" style="color: green;"></i> <br> Discussion</li>
+                    <li><i class="fas fa-archive" style="color: orange;"></i> <br>Archives</li>
+                    <li><i class="fas fa-users" style="color: red;"></i> <br>Groupes</li>
+                    <li><i class="fas fa-user-plus" style="color: purple;"></i><br> contact</li>
+                </ul>
+                
+            </div>
+            <div class="cnt">
+                <div class="active-menu">
+                    <h2>Menu actif</h2>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un contact">
+                </div>
+                <div class="contacts">
+                    <ul style="gap: 10px;">
+                        <li>
+                            <img src="OIP.jpg" alt="">
+                            <span style="gap: 100px;" class="contact-name">Nom du contact 1</span>
+                            <span class="contact-info">
+                                <span class="last-message-time">11 février 2024, 15:35</span>
+                                <span class="unread-indicator"></span>
+                            </span>
+                        </li>
+                        <!-- Ajoutez d'autres contacts ici -->
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="right">
+        <div class="contact-header">
+           <div class="contact-info">
+             <img src="OIP.jpg" alt="">
+             <h2>Breukh</h2>
+           </div>
+                <ul class="contact-options">
+                    <li><i style="color: rgb(255, 115, 0);"  class="fas fa-user-times"></i> </li>
+                    <li><i style="color: red;" class="fas fa-trash"></i> </li>
+                    <li><i style="color: rgb(160, 152, 152);" class="fas fa-archive"></i> </li>
+                    <li><i style="color: red;" class="fas fa-ban"></i> </li>
+                </ul>
+          </div>
+            <div class="messages">
+                <div class="message sent">
+                    <p>Message envoyé</p>
+                    <span class="message-time">11 février 2024, 15:30</span>
+                </div>
+                <div class="message received">
+                    <p>Réponse reçue</p>
+                    <span class="message-time">11 février 2024, 15:35</span>
+                </div>
+                <!-- Ajoutez plus de messages simulés ici -->
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Votre message">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breukh-chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-<HASH>" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="sidebar">
+                <ul>
+                    <li><i class="fas fa-envelope" style="color: blue;"></i> <br>Message</li>
+                    <li><i class="fas fa-comments" style="color: green;"></i> <br> Discussion</li>
+                    <li><i class="fas fa-archive" style="color: orange;"></i> <br>Archives</li>
+                    <li><i class="fas fa-users" style="color: red;"></i> <br>Groupes</li>
+                    <li><i class="fas fa-user-plus" style="color: purple;"></i><br> contact</li>
+                </ul>
+                
+            </div>
+            <div class="cnt">
+                <div class="active-menu">
+                    <h2>Menu actif</h2>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un contact">
+                </div>
+                <div class="contacts">
+                    <ul style="gap: 10px;">
+                        <li>
+                            <img src="OIP.jpg" alt="">
+                            <span style="gap: 100px;" class="contact-name">Nom du contact 1</span>
+                            <span class="contact-info">
+                                <span class="last-message-time">11 février 2024, 15:35</span>
+                                <span class="unread-indicator"></span>
+                            </span>
+                        </li>
+                        <!-- Ajoutez d'autres contacts ici -->
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="right">
+        <div class="contact-header">
+           <div class="contact-info">
+             <img src="OIP.jpg" alt="">
+             <h2>Breukh</h2>
+           </div>
+                <ul class="contact-options">
+                    <li><i style="color: rgb(255, 115, 0);"  class="fas fa-user-times"></i> </li>
+                    <li><i style="color: red;" class="fas fa-trash"></i> </li>
+                    <li><i style="color: rgb(160, 152, 152);" class="fas fa-archive"></i> </li>
+                    <li><i style="color: red;" class="fas fa-ban"></i> </li>
+                </ul>
+          </div>
+            <div class="messages">
+                <div class="message sent">
+                    <p>Message envoyé</p>
+                    <span class="message-time">11 février 2024, 15:30</span>
+                </div>
+                <div class="message received">
+                    <p>Réponse reçue</p>
+                    <span class="message-time">11 février 2024, 15:35</span>
+                </div>
+                <!-- Ajoutez plus de messages simulés ici -->
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Votre message">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+const database = {
+  "users": [
+    {
+      "id": 1,
+      "nom": "Aly",
+      "mot_de_passe": "1",
+      "image": "OIP.jpg",
+      "contacts": [2,3,5],
+      "groupes": [1]
+    },
+    {
+      "id": 2,
+      "nom": "Bob",
+      "mot_de_passe": "2",
+      "image": "OIP.jpg",
+      "contacts": [1,4],
+      "groupes": [1]
+    }
+  ],
+  "contacts": [
+    {
+      "id": 4,
+      "nom": "Toto",
+      "image": "OIP.jpg",
+      "archive": false 
+    },
+    {
+      "id": 5,
+      "nom": "Elvira❤️🔐",
+      "image": "img/elvira.png",
+      "archive": false 
+    },
+    {
+      "id": 3,
+      "nom": "Titi💪🏿",
+      "image": "OIP.jpg",
+      "archive": false 
+    },
+    {
+      "id": 1,
+      "nom": "Aly😎👍🏾",
+      "image": "OIP.jpg",
+      "archive": false 
+    },
+    {
+      "id": 2,
+      "nom": "Bob",
+      "image": "OIP.jpg",
+      "archive": false 
+    }
+  ],
+  "groupes": [
+    {
+      "id": 1,
+      "nom": "Groupe1",
+      "membres": [1, 2],
+      "discussions": [
+        {
+          "id": 1,
+          "expediteur": 1,
+          "text": "Bonjour à tous !",
+          "date": "2024-02-16T12:00:00",
+          "lu": true  
+        },
+        {
+          "id": 2,
+          "expediteur": 2,
+          "text": "Bonjour !",
+          "date": "2024-02-16T12:05:00",
+          "lu": false  
+        }
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "expediteur": 1,
+      "destinataire": [2],
+      "text": "Salut, comment vas-tu ?",
+      "date": "2024-02-16T12:00:00",
+      "lu": false  
+    },
+    {
+      "id": 2,
+      "expediteur": 2,
+      "destinataire": [1],
+      "text": "Bonjour ! Je vais bien, merci.",
+      "date": "2024-02-16T12:05:00",
+      "lu": true  
+    },
+    
+    {
+      "id": 3,
+      "expediteur": 1,
+      "destinataire": [3],
+      "text": "Salut Titi !",
+      "date": "2024-02-16T12:10:00",
+      "lu": false  
+    },
+    {
+      "id": 4,
+      "expediteur": 3,
+      "destinataire": [1],
+      "text": "Salut aly !",
+      "date": "2024-02-16T12:15:00",
+      "lu": true  
+    },
+    {
+      "id": 5,
+      "expediteur": 1,
+      "destinataire": [5],
+      "text": "Salut Elvira !",
+      "date": "2024-02-16T12:20:00",
+      "lu": false  
+    },
+    {
+      "id": 6,
+      "expediteur": 5,
+      "destinataire": [1],
+      "text": "Salut Aly cmnt vas-tu !",
+      "date": "2024-02-16T12:25:00",
+      "lu": false  
+    },
+    {
+      "id": 7,
+      "expediteur": 2,
+      "destinataire": [4],
+      "text": "Salut Aly !",
+      "date": "2024-02-16T12:30:00",
+      "lu": false  
+    },
+    {
+      "id": 8,
+      "expediteur": 4,
+      "destinataire": [2],
+      "text": "Salut Bob !",
+      "date": "2024-02-16T12:35:00",
+      "lu": false  
+    }
+  ]
+};
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("Le DOM est entièrement chargé.");
+
+  document.querySelector('.login-form').classList.remove('hidden');
+  const loginForm = document.getElementById('loginForm');
+  loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      login(username, password);
+  });
+
+  const contactsContainer = document.querySelector('.contacts ul');
+  contactsContainer.addEventListener('click', (e) => {
+      console.log("Clic détecté sur la liste des contacts.");
+      const contactElement = e.target.closest('li');
+      if (contactElement) {
+          const contactId = contactElement.dataset.contactId;
+          displayMessages(contactId);
+      }
+  });
+  // Gestionnaire d'événements pour la barre de recherche de contact
+  const searchBar = document.querySelector('.search-bar input');
+  searchBar.addEventListener('input', function(event) {
+      const searchText = event.target.value.trim().toLowerCase(); // Obtenez le texte de recherche sans espaces et en minuscules
+      filterContacts(searchText);
+  });
+       // Gestionnaire d'événements pour l'envoi de messages
+       const sendMessageButton = document.querySelector('.message-input button[type="submit"]');
+       sendMessageButton.addEventListener('click', function(event) {
+           event.preventDefault(); // Empêcher le rechargement de la page
+       
+           const messageInput = document.getElementById('messageInput'); // Récupérer le champ de saisie du message
+           console.log("Message Input:", messageInput);
+           const messageText = messageInput.value.trim(); // Récupérer le texte du message
+           console.log("Message Text:", messageText);
+       
+           if (messageText !== '') { // Vérifier si le message n'est pas vide
+               const contactHeader = document.querySelector('.contact-header');
+               if (!contactHeader.classList.contains('hidden')) { // Vérifier si le contactHeader est visible
+                   const destinataireId = contactHeader.dataset.contactId; // Récupérer l'ID du destinataire depuis l'élément de contact
+                   console.log("Destinataire ID:", destinataireId);
+                   const newMessage = {
+                       id: database.messages.length + 1, // Générer un nouvel identifiant de message
+                       expediteur: currentUser.id,
+                       destinataire: [parseInt(destinataireId)],
+                       text: messageText,
+                       date: new Date().toISOString(),
+                       lu: false
+                   };
+       
+                   // Ajouter le nouveau message à la base de données des messages
+                   console.log("Nouveau Message:", newMessage);
+                   database.messages.push(newMessage);
+                   console.log("Base de données des Messages:", database.messages);
+                   // Afficher à nouveau les messages pour rafraîchir l'affichage
+                   displayMessages(destinataireId);
+                   // Effacer le champ de saisie du message après l'envoi
+                   messageInput.value = '';
+               } else {
+                   console.error("Aucun contact sélectionné pour l'envoi du message.");
+               }
+           } else {
+               console.error("Le message est vide.");
+           }
+       });
+  
+});
+
+
+let currentUser = null;
+
+function login(username, password) {
+  console.log("Tentative de connexion avec nom d'utilisateur:", username);
+  const user = getCurrentUser(username, password);
+  if (user) {
+      console.log("Connexion réussie pour l'utilisateur:", user.nom);
+      currentUser = user;
+      document.querySelector('.login-form').classList.add('hidden');
+      displayContacts(user);
+      document.querySelector('.container').classList.remove('hidden');
+  } else {
+      console.log("Nom d'utilisateur ou mot de passe incorrect.");
+      alert("Nom d'utilisateur ou mot de passe incorrect.");
+  }
+}
+
+function displayContacts(user) {
+  console.log("Affichage des contacts pour l'utilisateur:", user.nom);
+  const userContacts = user.contacts;
+  const contactsContainer = document.querySelector('.contacts ul');
+  contactsContainer.innerHTML = '';
+
+  userContacts.forEach(contactId => {
+      const contact = database.contacts.find(contact => contact.id === contactId);
+      if (!contact.archive) {
+          const lastMessage = database.messages.filter(message =>
+              (message.expediteur === user.id && message.destinataire.includes(contactId)) ||
+              (message.destinataire.includes(user.id) && message.expediteur === contactId)
+          ).pop();
+
+          const showUnreadIndicator = lastMessage && !lastMessage.lu;
+
+          const contactHTML = `
+              <li data-contact-id="${contact.id}">
+                  <img src="${contact.image}" alt="">
+                  <span class="contact-name">${contact.nom}</span>
+                  <span class="contact-info">
+                      <span class="last-message-time">${lastMessage ? lastMessage.date : ''}</span>
+                      ${showUnreadIndicator ? '<span class="unread-indicator"></span>' : ''}
+                  </span>
+              </li>
+          `;
+
+          contactsContainer.insertAdjacentHTML('beforeend', contactHTML);
+      }
+  });
+
+  const contactsSection = document.querySelector('.contacts');
+  contactsSection.classList.remove('hidden');
+}
+
+
+function displayMessages(contactId) {
+  console.log("Affichage des messages pour le contact avec l'ID:", contactId);
+  
+  const messagesContainer = document.querySelector('.messages');
+  messagesContainer.innerHTML = ''; // Efface les messages précédents
+
+  const contact = database.contacts.find(contact => contact.id === parseInt(contactId));
+  if (!contact) {
+    console.error("Contact introuvable dans la base de données.");
+    return;
+  }
+
+  const contactHeader = document.querySelector('.contact-header');
+  contactHeader.classList.remove('hidden');
+  const contactName = contactHeader.querySelector('h2');
+  const contactImage = contactHeader.querySelector('img');
+  contactName.textContent = contact.nom;
+  contactImage.src = contact.image;
+  contactHeader.dataset.contactId = contact.id;
+  
+
+  const contactMessages = database.messages.filter(message =>
+    (message.expediteur === currentUser.id && message.destinataire.includes(parseInt(contactId))) ||
+    (message.destinataire.includes(currentUser.id) && message.expediteur === parseInt(contactId))
+  );
+
+   // Mettre à jour l'état "lu" des messages envoyés par le contact
+   contactMessages.forEach(message => {
+    if (message.expediteur === parseInt(contactId)) {
+        message.lu = true;
+    }
+});
+
+  contactMessages.forEach(message => {
+    const messageClass = message.expediteur === currentUser.id ? 'sent' : 'received';
+    const messageHTML = `
+      <div class="message ${messageClass}">
+        <p>${message.text}</p>
+        <span class="message-time">${message.date}</span>
+      </div>
+    `;
+    messagesContainer.insertAdjacentHTML('beforeend', messageHTML);
+  });
+
+  // Afficher la section des messages
+  messagesContainer.classList.remove('hidden');
+  const messageInput = document.querySelector('.message-input');
+  messageInput.classList.remove('hidden');
+}
+
+function getCurrentUser(username, password) {
+  return database.users.find(user => user.nom === username && user.mot_de_passe === password);
+}
+
+function filterContacts(searchText) {
+  const contactsContainer = document.querySelector('.contacts ul');
+  const contacts = Array.from(contactsContainer.children); // Convertissez les nœuds d'enfants en tableau
+
+  contacts.forEach(contact => {
+      const contactName = contact.querySelector('.contact-name').textContent.trim().toLowerCase(); // Obtenez le nom du contact sans espaces et en minuscules
+      if (contactName.includes(searchText)) {
+          contact.style.display = 'block'; // Afficher le contact si son nom correspond à la recherche
+      } else {
+          contact.style.display = 'none'; // Masquer le contact sinon
+      }
+  });
+}
+
+
+
