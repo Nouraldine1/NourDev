@@ -13,7 +13,7 @@ const database = {
       "nom": "Fifi",
       "mot_de_passe": "2",
       "image": "img/OIQ.webp",
-      "contacts": [1,4],
+      "contacts": [1,4,6],
       "groupes": [1,2]
     },
     {
@@ -21,17 +21,16 @@ const database = {
       "nom": "Elvira",
       "mot_de_passe": "3",
       "image": "img/elvira.png",
-      "contacts": [1,2],
+      "contacts": [1,2,6],
       "groupes": [1,2]
     },
-
     {
       "id": 6,
       "nom": "Edem",
       "mot_de_passe": "1",
-      "image": "img/OIQ.webp",
-      "contacts": [1,2,3],
-      "groupes": [1]
+      "image": "img/elvira.png",
+      "contacts": [1,2],
+      "groupes": [1,2]
     },
     
   ],
@@ -39,13 +38,6 @@ const database = {
     {
       "id": 4,
       "nom": "Toto",
-      "image": "img/OIQ.webp",
-      "archive": false ,
-      "bloque": false,
-    },
-    {
-      "id": 10,
-      "nom": "Edem",
       "image": "img/OIQ.webp",
       "archive": false ,
       "bloque": false,
@@ -77,7 +69,14 @@ const database = {
       "image": "img/OIQ.webp",
       "archive": false ,
       "bloque": false,
-    }
+    },
+    {
+      "id": 6,
+      "nom": "Edem",
+      "image": "img/elvira.png",
+      "archive": false ,
+      "bloque": false,
+    },
   ],
   "groupes": [
     {
@@ -132,14 +131,6 @@ const database = {
       "id": 1,
       "expediteur": 1,
       "destinataire": [2],
-      "text": "Salut, comment vas-tu ?",
-      "date": "2024-02-16T12:00:00",
-      "lu": false  
-    },
-    {
-      "id": 9,
-      "expediteur": 6,
-      "destinataire": [1],
       "text": "Salut, comment vas-tu ?",
       "date": "2024-02-16T12:00:00",
       "lu": false  
