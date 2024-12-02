@@ -70,6 +70,7 @@ const database = {
       "archive": false ,
       "bloque": false,
     },
+    
     {
       "id": 6,
       "nom": "Edem",
